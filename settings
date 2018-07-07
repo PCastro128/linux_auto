@@ -1,0 +1,2 @@
+LS_COLORS=$LS_COLORS:'ow=0;40;36:' ; export LS_COLORS
+tabs 4
