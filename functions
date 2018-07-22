@@ -1,7 +1,8 @@
+GOTO_PREFIX='/home/paolo/saved_shortcuts/'
+
 setgoto () {
-    local prefix='/home/paolo/auto/saved_shortcuts/'
     if [ $# -eq 0 ]; then
-        local shortcut="${prefix}default"
+        local shortcut="${GOTO_PREFIX}default"
     else
         local shortcut=$prefix$1
     fi
@@ -10,11 +11,10 @@ setgoto () {
 }
 
 goto () {
-    local prefix='/home/paolo/auto/saved_shortcuts/'
     if [ $# -eq 0 ]; then
-        local shortcut="${prefix}default"
+        local shortcut="${GOTO_PREFIX}default"
     else
-        local shortcut=$prefix$1
+        local shortcut=$GOTO_PREFIX$1
     fi
 
     while read -r line
