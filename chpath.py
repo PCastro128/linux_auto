@@ -20,11 +20,13 @@ def win_to_linux(path):
     else:
         return path.replace("\\", "/")
 
+
 def linux_to_win(path):
     if path.startswith("/mnt/c"):
         return path.replace("/mnt/c", "C:").replace("/", "\\")
     else:
         return path.replace("/", "\\")
+
 
 def main():
     args = parse_args()
