@@ -1,3 +1,4 @@
 alias python='python3.6'
-alias test_coverage='python /home/paolo/auto/test_coverage.py'
+alias test_coverage='python3.6 /home/paolo/auto/test_coverage.py'
+alias chpath='python3.6 /home/paolo/auto/chpath.py'
 alias pip='python3.6 -m pip'
