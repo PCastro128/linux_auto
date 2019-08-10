@@ -1,0 +1,3 @@
+for filename in $(ls /home/paolo/auto/source/*); do 
+    source $filename
+done
