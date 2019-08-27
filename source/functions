@@ -8,6 +8,7 @@ function freeze () {
                 touch $file_path
             fi
             alias $1 >> $file_path
+            source $file_path
         else
             echo "The alias you entered doesn't exist"
         fi

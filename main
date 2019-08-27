@@ -12,4 +12,4 @@ for filename in $(ls /home/paolo/auto/source/*); do
 done
 
 
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]: \[\033[01;34m\]\W\[\033[00m\] \$ '

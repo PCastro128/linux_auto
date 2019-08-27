@@ -1,1 +1,6 @@
 #!/bin/bash
+
+
+if [[ -f $AUTO_SETTINGS_DIR/freeze_aliases ]]; then
+    source $AUTO_SETTINGS_DIR/freeze_aliases
+fi
