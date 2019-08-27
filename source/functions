@@ -1,0 +1,17 @@
+#!/bin/bash
+
+function freeze () {
+    local file_path=$AUTO_SETTINGS_DIR/freeze_aliases
+    if [[ $# == 1 ]]; then
+        if alias $1 &> /dev/null; then
+            if [ ! -f $file_path ]; then
+                touch $file_path
+            fi
+            alias $1 >> $file_path
+        else
+            echo "The alias you entered doesn't exist"
+        fi
+    else
+        echo "freeze: Arguments are invalid. Give only name of alias to freeze"
+    fi
+}
