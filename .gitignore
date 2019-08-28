@@ -1,1 +1,1 @@
-settings/*
+settings/[a-zA-Z0-9]*
