@@ -16,3 +16,7 @@ function freeze () {
         echo "freeze: Arguments are invalid. Give only name of alias to freeze"
     fi
 }
+
+function car () {
+    g++ $@ && ./a.out
+}
