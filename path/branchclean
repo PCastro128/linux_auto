@@ -1,0 +1,3 @@
+echo "=== BRANCHES TO DELETE === 
+$(git branch --merged | grep -v '^[ *]*master$' | grep -v '^[ *]*main$')" > /tmp/merged-branches && nano /tmp/merged-branches && cat /tmp/merged-branches | tail -n +2 | xargs git branch -d
+
