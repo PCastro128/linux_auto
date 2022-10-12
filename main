@@ -7,7 +7,7 @@ fi
 
 
 
-for filename in $(ls /home/paolo/auto/source/*); do 
+for filename in $(ls $HOME/auto/source/*); do 
     source $filename
 done
 
