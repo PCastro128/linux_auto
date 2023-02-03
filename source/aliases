@@ -5,4 +5,3 @@ if [[ -f $AUTO_SETTINGS_DIR/freeze_aliases ]]; then
     source $AUTO_SETTINGS_DIR/freeze_aliases
 fi
 
-alias flaskapp='ssh paolo@157.230.219.222'
