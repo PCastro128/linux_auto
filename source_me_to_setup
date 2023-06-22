@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "
+source $HOME/auto/main" >> $HOME/.bashrc
