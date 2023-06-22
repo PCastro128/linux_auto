@@ -1,0 +1,5 @@
+echo $1 > "$HOME/auto/settings/name.txt"
+echo "Name updated. Run this command to restart AUTO:
+
+    source $HOME/auto/main
+"
